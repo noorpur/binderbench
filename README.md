@@ -1,4 +1,4 @@
-# CIIS BinderBench
+# BinderBench
 
 Hybrid AI and physics-informed pipeline for protein-protein interaction binder mutation prioritization.
 
