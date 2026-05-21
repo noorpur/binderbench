@@ -1,0 +1,4 @@
+pdb_complex,pdb_id,mutation,wt,mut,chain,resnum,d_mass,d_charge,d_hydro,d_aromatic,contacts_4A,contacts_6A,contacts_8A,contacts_10A,min_other_chain_dist,has_structure
+1ABC_A_B,1ABC,RA45G,R,G,A,45,-99.13,-1,4.1,0,2,8,19,31,3.8,1
+1ABC_A_B,1ABC,YA52F,Y,F,A,52,-16.00,0,4.1,0,1,5,12,26,4.4,1
+1ABC_A_B,1ABC,DA71K,D,K,A,71,13.09,2,-0.4,0,0,3,10,24,5.1,1

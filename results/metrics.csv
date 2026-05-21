@@ -1,0 +1,2 @@
+spearman,pearson,mae,rmse,auroc_deleterious,auprc_deleterious,balanced_accuracy_deleterious,top10_enrichment_improvers,n_rows,n_complexes,mode,use_embeddings
+0.5471255591453421,0.5230537936708153,0.9930014318477471,1.4792337914509455,0.7936978608092,0.7058471018812452,0.7199220493939076,3.6702788483337114,4956,320,full,False

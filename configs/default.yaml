@@ -1,0 +1,39 @@
+project:
+  name: ciis_binderbench
+  random_seed: 13
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  results_dir: results
+  reports_dir: reports
+  models_dir: models
+
+data:
+  skempi_csv_url: "https://life.bsc.es/pid/skempi2/database/download/skempi_v2.csv"
+  skempi_pdb_url: "https://life.bsc.es/pid/skempi2/database/download/SKEMPI2_PDBs.tgz"
+  skempi_csv: data/raw/skempi_v2.csv
+  skempi_pdb_tgz: data/raw/SKEMPI2_PDBs.tgz
+  skempi_pdb_dir: data/raw/SKEMPI2_PDBs
+  feature_table: data/processed/skempi_features.parquet
+  embeddings_table: data/processed/esm2_embeddings.parquet
+
+features:
+  contact_cutoffs_angstrom: [4.0, 6.0, 8.0, 10.0]
+  use_mutation_location: true
+  keep_single_mutants_only_for_primary_benchmark: true
+
+validation:
+  n_splits: 5
+  group_by: pdb_complex
+  deleterious_ddg_threshold_kcal_mol: 1.0
+  improvement_ddg_threshold_kcal_mol: -0.5
+  fail_below:
+    spearman: 0.45
+    auroc_deleterious: 0.75
+    top10_enrichment_improvers: 2.0
+
+model:
+  target: ddg_kcal_mol
+  optuna_timeout_seconds: 1800
+  n_jobs: -1

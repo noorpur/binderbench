@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Downloaded datasets
+data/raw/*.csv
+data/raw/*.tgz
+data/raw/SKEMPI2_PDBs/
+data/processed/*.parquet
+
+# Temporary/cache files
+*.log
+.cache/
+
+# Build/package metadata
+*.egg-info/
+
+# Generated feature tables
+data/processed/*.csv
