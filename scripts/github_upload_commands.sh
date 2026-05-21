@@ -4,7 +4,7 @@ set -euo pipefail
 REMOTE_URL="${1:-}"
 
 if [[ -z "$REMOTE_URL" ]]; then
-  echo "Usage: bash scripts/github_upload_commands.sh git@github.com:YOUR_USERNAME/ciis-binderbench.git"
+  echo "Usage: bash scripts/github_upload_commands.sh git@github.com:YOUR_USERNAME/binderbench.git"
   exit 1
 fi
 
