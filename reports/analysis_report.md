@@ -46,7 +46,3 @@ This model is designed for prioritization, not autonomous clinical decision-maki
 ## Reproducibility
 
 The commands are in `scripts/run_full_pipeline.sh`. The trained model is saved in `models/hybrid_binder_model.joblib`, and out-of-fold predictions are saved in `results/oof_predictions.csv`.
-
-## Candidate-ranking demonstration
-
-The candidate-ranking output in `results/candidate_rankings.csv` is included as a reproducible inference demonstration using the repository's example candidate file. These example mutations are not claimed as experimentally validated therapeutic candidates. In a real binder-design campaign, this ranking step would be applied to target-specific mutation libraries generated from experimentally relevant complexes, followed by structural inspection, orthogonal physics-based scoring, manufacturability assessment, immunogenicity screening, and wet-lab binding assays.

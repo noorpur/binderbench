@@ -1,4 +1,4 @@
-from ciis_binderbench.features import aa_delta_features, parse_mutation_token
+from binderbench.features import aa_delta_features, parse_mutation_token
 
 
 def test_parse_mutation_token():

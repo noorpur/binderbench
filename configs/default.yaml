@@ -1,5 +1,5 @@
 project:
-  name: ciis_binderbench
+  name: binderbench
   random_seed: 13
 
 paths:
